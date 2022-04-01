@@ -117,14 +117,20 @@ header .active{
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);}
 
 
-	header .navbar a{
-	display:block;
-	padding:1.5rem;
-	margin:1rem;
-	font-size:2rem;
-	background:white}}
-	
-
+header .navbar a{
+display:block;
+padding:1.5rem;
+margin:1rem;
+font-size:2rem;
+background:white}
+/*rectas*/
+.recetas .receta{
+height:20rem;width:15rem;
+font-size:2rem;}
+.recetas{
+grid-template-columns: repeat(auto-fit, [col-start] minmax(20rem, 1fr) [col-end])
+}
+}
 
 @media (max-width:991px){
 html{
@@ -144,7 +150,6 @@ background:rgb(0,0,0,.8);
 display:flex;
 align-items:center;
 justify-content:center;
-padding:0 1rmm;
 }
 
 .gato{
@@ -187,14 +192,18 @@ color:var(--green)
 }
 /*secion de recetas*/
 .recetas{
-padding:9rem 5rem 0rem 2rem;
+margin:9rem;
 display:grid;
-grid-template-columns:repeat(auto-fit, minmax(20rem,2fr));
-row-gap: 2rem;
-column-gap:5rem;
+grid-template-columns: repeat(auto-fit, [col-start] minmax(25rem, 1fr) [col-end])
+;
+row-gap:3ch;
+justify-items:center;
+justify-content:center;
+border:2px solid black;
 }
 .receta{
-height:32rem;width:25rem;
+border:2px solid black;
+height:30rem;width:22rem;
 position:relative;
 background-color:var(--green);
 font-size:3rem;
