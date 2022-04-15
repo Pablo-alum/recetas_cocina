@@ -91,6 +91,11 @@ header .icons #menu-bars{
 
 
 /*media queries*/
+@media(max-width:1250px){
+	html{
+		font-size:1250px;
+	}
+}
 @media (max-width:991px){
 html{
 font-size:55%;}
@@ -131,10 +136,6 @@ font-size:2rem;}
 grid-template-columns: repeat(auto-fit, [col-start] minmax(20rem, 1fr) [col-end])
 }
 }
-
-@media (max-width:991px){
-html{
-font-size:50%;}}
 /*cerrado el nav y el header*/
 
 
