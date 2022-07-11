@@ -113,7 +113,7 @@ header .icons #menu-bars{
 	top:100%;left:0;right:0;
 	background:white;
 	border-top:.1rem solid rgb(0,0,0,.2);
-	border-bottom: .1 solid rgb(0,0,0.2);
+	border-bottom: .1rem solid rgb(0,0,0.2);
 	padding:1rem;
 	clip-path: polygon(0 0,100% 0,100% 0,0 0);
 }
@@ -153,7 +153,7 @@ align-items:center;
 justify-content:center;
 }
 
-.gato{
+.search-top{
 top:0%
 }
 
@@ -191,6 +191,13 @@ color:var(--green)
 	top:2rem;right:3rem;
 	font-size:5rem;
 }
+
+.filtro{
+display:none;
+}
+
+
+
 /*secion de recetas*/
 .recetas{
 margin:9rem;
@@ -198,9 +205,8 @@ display:grid;
 grid-template-columns: repeat(auto-fit, [col-start] minmax(25rem, 1fr) [col-end])
 ;
 row-gap:3ch;
-justify-items:center;
+justify-items:start;
 justify-content:center;
-border:2px solid black;
 }
 .receta{
 border:2px solid black;
@@ -209,6 +215,14 @@ position:relative;
 background-color:var(--green);
 font-size:3rem;
 padding:2rem 2rem 2rem 2rem;
+margin:1rem;
+}
+.receta:hover{
+margin-top:3rem;
+margin-top:3rem;
 }
 .receta .receta_imagenes{
 height:50%;width:100%;}
+
+.receta .fa-heart{color:#f56642;}
+

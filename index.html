@@ -12,6 +12,7 @@
 	</head>
 	<body>
 	<header>
+
 		<a href="#" class="logo"><i class="fa-solid fa-utensils"></i>resto.</a>
 		<nav class="navbar">
 			<a  class="activate" href="#home" >home</a>
@@ -21,12 +22,10 @@
 			<a href="#review" >review</a>
 			<a href="#order" >order</a>
 		</nav>
-		
-
 		<div class="icons">
 			<i class="fa-solid fa-bars" id="menu-bars"></i>
 			<i class="fa-solid fa-magnifying-glass" id="search"></i>
-			<i class="fa-solid fa-heart"></i>
+			<i class="fa-solid fa-heart" id="heart"></i>
 			<i class="fa-solid fa-cart-shopping"></i>
 		</div>
 	</header>
@@ -35,46 +34,44 @@
  <!--buscador -->
 
 <form class="search-from" >
-	<input type="search" placeholder="Buscar..." name="" id="search-box"/>
-	<label for="search-box" class="fa-solid fa-magnifying-glass" ></label>
+	<input type="search" placeholder="Buscar..."  autocomplete="off" name="" id="search-box"/>
+	<label for="search-box" class="fa-solid fa-magnifying-glass" id="logo_buscar" ></label>
 	<i class="fas fa-times" id="close"></i>
 </form>
-
 <!--secion princial -->
 <section class="recetas">
 	<div class="receta">
 		<img src="imagines/lasaña.jpeg" class="receta_imagenes" alt=""/>
-		<h4 class="receta_nombre">lasaña</h4>
+		<h4 class="recetas_nombre">lasaña</h4>
+		<i class="fa-solid fa-heart" ></i>
 	</div>
 	<div class="receta">
 		<img src="imagines/Rabioles.jpeg" class="receta_imagenes" alt=""/>
-		<h4 class="recetas_nombre">ravioles argentinos</h4>
-	</div>
-		<div class="receta">
-		<img src="imagines/Rabioles.jpeg" class="receta_imagenes" alt=""/>
-		<h4 class="recetas_nombre">rabioles aregentinos</h4>
-	</div>
+		<h4 class="recetas_nombre">gato</h4>
+		<i class="fa-solid fa-heart"  ></i>
+	</div> 
 	<div class="receta">
 		<img src="imagines/Rabioles.jpeg" class="receta_imagenes" alt=""/>
-		<h4 class="recetas_nombre">rabioles aregentinos</h4>
+		<h4 class="recetas_nombre">perro</h4>
+		<i class="fa-solid fa-heart"></i>
 	</div>
-	<div class="receta">
+	<div class="receta" >
 		<img src="imagines/Rabioles.jpeg" class="receta_imagenes" alt=""/>
-		<h4 class="recetas_nombre">rabioles aregentinos</h4>
+		<h4 class="recetas_nombre">loro</h4>
+		<i class="fa-solid fa-heart" ></i>
 	</div>
-	<div class="receta">
+	<div class="receta" >
 		<img src="imagines/Rabioles.jpeg" class="receta_imagenes" alt=""/>
-		<h4 class="recetas_nombre">rabioles aregentinos</h4>
+		<h4 class="recetas_nombre">señora</h4>
+		<i class="fa-solid fa-heart" ></i>
 	</div>
 
+	<div class="receta" class="filtro">
+		<img src="imagines/Rabioles.jpeg" class="receta_imagenes" alt=""/>
+		<h4 class="recetas_nombre">ravioles aregentinos</h4>
+		<i class="fa-solid fa-heart" class="corazon" ></i>
+	</div>
 </section>
-<!--fin de la cecion princial-->
-
-
-
-
-
-
 		<script src="scripts/script.js"></script>
 	</body>
 </html>
