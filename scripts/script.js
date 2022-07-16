@@ -13,20 +13,28 @@ navbar.classList.remove('active');}
 let busqueda = document.querySelector('#search');
 let buscador_grande = document.querySelector('.search-from');
 busqueda.onclick =() =>{
-	buscador_grande.classList.toggle('search-top');}
+buscador_grande.classList.toggle('search-top');
+search.addEventListener("keyup",pruebas)
+}
+
+search = document.querySelector('#search-box');
+
 
 let close = document.querySelector('#close');
 close.onclick =() =>{
-buscador_grande.classList.remove('search-top')}
+buscador_grande.classList.remove('search-top')
+search.removeEventListener("keyup",pruebas)
+}
 let close_two = document.querySelector("#logo_buscar")
 close_two.onclick=() =>{
-buscador_grande.classList.toggle('search-top');}
+buscador_grande.classList.toggle('search-top');
+search.removeEventListener("keyup",pruebas)
+}
 
 
 //close style in scripts 
 
 //open search
-let search = document.querySelector('#search-box');
 
 search.addEventListener('keyup',pruebas =()=>{
 let recetas = document.querySelectorAll(".receta")
@@ -42,3 +50,19 @@ if (texto_cocina.includes(nombre) ){
 })//recetas.foreach
 }//addEventListener
 )
+
+let corazones = document.querySelectorAll(".recetas .fa-heart")
+
+for (const corazo of corazones){
+corazo.addEventListener("click",function(event){
+if (corazo.classList.contains("fa-regular")) {
+corazo.classList.replace("fa-regular", "fa-solid")
+corazo.style.color = "#cf624c";}
+
+else{
+corazo.classList.replace("fa-solid", "fa-regular")
+corazo.style.color = "black";
+}
+}
+)}
+
