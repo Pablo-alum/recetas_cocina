@@ -1,55 +1,71 @@
 <!--Pruebas del ssh-->
 <!DOCTYPE html>
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Rescetas Cocina</title>
-		<link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
-		<!--links incons -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</head>
-	<body>
-	<header>
+<html lang="aaes">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Rescetas Cocina</title>
+    <!--links incons -->
+    <link
+      rel="stylesheet"
+      href="/styles/style.css"
+      type="text/css"
+      media="screen"
+      title="no title"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/page_recetas/admin.html" class="logo"><i class="fa-solid fa-utensils"></i>recetas</a>
+      <nav class="navbar">
+        <a href="/index.html" class="activate">home</a>
+        <a href="/page_recetas/pollo.html">pollo</a>
+        <a href="/page_recetas/carnes.html">carnes</a>
+        <a href="/page_recetas/pastas.html">pastas</a>
+        <a href="/page_recetas/postres.html">postres</a>
+      </nav>
+      <div class="icons">
+        <i class="fa-solid fa-bars" id="menu-bars"></i>
+        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+        <i class="fa-solid fa-heart" id="heart"></i>
+      </div>
+    </header>
 
-		<a href="#" class="logo"><i class="fa-solid fa-utensils"></i>resto.</a>
-		<nav class="navbar">
-			<a  class="activate" href="#home" >home</a>
-			<a href="#dishes" >dishes</a>
-			<a href="#about" >about</a>
-			<a href="#menu" >menu</a>
-			<a href="#review" >review</a>
-			<a href="#order" >order</a>
-		</nav>
-		<div class="icons">
-			<i class="fa-solid fa-bars" id="menu-bars"></i>
-			<i class="fa-solid fa-magnifying-glass" id="search"></i>
-			<i class="fa-solid fa-heart" id="heart"></i>
-			<i class="fa-solid fa-cart-shopping"></i>
-		</div>
-	</header>
+    <!--cabescera y menu finalisados -->
+    <!--buscador -->
 
-<!--cabescera y menu finalisados -->
- <!--buscador -->
-
-<form class="search-from" >
-	<input type="search" placeholder="Buscar..."  autocomplete="off" name="" id="search-box"/>
-	<label for="search-box" class="fa-solid fa-magnifying-glass" id="logo_buscar" ></label>
-	<i class="fas fa-times" id="close"></i>
-</form>
-<!--secion princial -->
-<section class="recetas">
-	<div class="receta">
-		<img src="imagines/lasaña.jpeg" class="receta_imagenes" alt=""/>
-		<h4 class="recetas_nombre">lasaña</h4>
-		<i class="fa-regular fa-heart" ></i>
-	</div>
-
-
-
-
-</section>
-		<script src="scripts/script.js"></script>
-	</body>
+    <form class="search-from">
+      <input
+        type="search"
+        placeholder="Buscar..."
+        autocomplete="off"
+        name=""
+        id="search-box"
+      />
+      <label
+        for="search-box"
+        class="fa-solid fa-magnifying-glass"
+        id="logo_buscar"
+      ></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+    <!--secion princial -->
+    <section class="recetas">
+      <div class="receta" href="/page_recetas/lasaña.html">
+        <img src="/imagines/lasaña.jpeg" class="receta_imagenes" alt="" />
+        <h4 class="recetas_nombre">lasaña</h4>
+        <i class="fa-regular fa-heart"></i>
+      </div>
+    </section>
+    <script src="/scripts/script.js"></script>
+  </body>
 </html>

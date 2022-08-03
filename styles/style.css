@@ -1,228 +1,233 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,400&display=swap');
+/* funete de google */
 
-:root{
-	--green:#85C88A; --black:#192a56;
-	--light-color:#666;
-	--box-shadow:0 .5rem 1.5rem rgb(0,0,0,.1);
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+:root {
+  --green: #85c88a;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgb(0, 0, 0, 0.1);
 }
-*{font-family: 'Nunito', sans-serif;
-margin:0; padding:0;
-box-sizing:border-box;
-text-decoration:none;
-outline:none; border:none;
-text-transform:capitalize;
-transition:all .2s linear;
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
-html{
-font-size:72.5%;
-overflow-x:hidden;
-scroll-padding-top:5.5rem;
-scroll-behavior: smooth;
-
+html {
+  font-size: 72.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
 }
-header{
-position:fixed;
-top:0;left:0;right:0;
-background:#fff;
-padding:1rem 7%;
-display:flex;
-align-items:center;
-justify-content:space-between;
-z-index:1000;
-box-shadow:var(--box-shadow);
-
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
 }
-header .logo{
-color:var(--black);
-font-size:2.5rem;
-font-weight:bolder;
+header .logo {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
 }
-header .logo i{
-color:var(--green);
-padding-right:0.2rem;
+header .logo i {
+  color: var(--green);
+  padding-right: 0.2rem;
 }
-header .navbar a{
-font-size:1.7rem;
-border-radius:0.5rem;
-padding:0.5rem 1.5rem;
-color:var(--black);
+header .navbar a {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--black);
 }
 
 header .navbar a.activate,
-header .navbar a:hover{
-color:white;
-background:var(--green)
-
+header .navbar a:hover {
+  color: white;
+  background: var(--green);
 }
 
 header .icons i,
-header .icons a{
-cursor:pointer;
-margin-left:0.5rem;
-padding-left:1.5rem;
-height:4.5rem;
-line-height:4.5rem;
-width:4.5rem;
-font-size:1.5rem;
-border-radius:50%;
-background-color:#eee
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  padding-left: 1.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #eee;
 }
 header .icons i:hover,
-header .icons a:hover{
-	color:white;
-	background-color:var(--green);
-	transform:rotate(360deg)
+header .icons a:hover {
+  color: white;
+  background-color: var(--green);
+  transform: rotate(360deg);
 }
 
-header .icons #menu-bars{
- display:none;
+header .icons #menu-bars {
+  display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*media queries*/
-@media(max-width:1250px){
-	html{
-		font-size:1250px;
-	}
+@media (max-width: 1250px) {
+  html {
+    font-size: 1250px;
+  }
 }
-@media (max-width:991px){
-html{
-font-size:55%;}
-header{
-	padding:1rem 2rem;
-}}
-
-
-@media (max-width:768px){
-header .icons #menu-bars{
-	display:inline-block;}
-
-	header .navbar{
-	position:absolute;
-	top:100%;left:0;right:0;
-	background:white;
-	border-top:.1rem solid rgb(0,0,0,.2);
-	border-bottom: .1rem solid rgb(0,0,0.2);
-	padding:1rem;
-	clip-path: polygon(0 0,100% 0,100% 0,0 0);
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
 }
+@media (max-width: 768px) {
+  header .icons #menu-bars {
+    display: inline-block;
+  }
 
-header .active{
-	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);}
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 0.1rem solid rgb(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgb(0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
 
+  header .active {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
 
-header .navbar a{
-display:block;
-padding:1.5rem;
-margin:1rem;
-font-size:2rem;
-background:white}
-/*rectas*/
-.recetas .receta{
-height:20rem;width:15rem;
-font-size:2rem;}
-.recetas{
-grid-template-columns: repeat(auto-fit, [col-start] minmax(20rem, 1fr) [col-end])
-}
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: white;
+  }
+  /*rectas*/
+  .recetas .receta {
+    height: 20rem;
+    width: 15rem;
+    font-size: 2rem;
+  }
+  .recetas {
+    grid-template-columns: repeat(
+      auto-fit,
+      [col-start] minmax(20rem, 1fr) [col-end]
+    );
+  }
 }
 /*cerrado el nav y el header*/
 
-
 /*comieza el buscador*/
 
-
-.search-from{
-position:fixed;
-top:100%;left:0;
-height:100%;width:100%;
-z-index:1004;
-background:rgb(0,0,0,.8);
-display:flex;
-align-items:center;
-justify-content:center;
+.search-from {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1004;
+  background: rgb(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.search-top{
-top:0%
+.search-top {
+  top: 0%;
 }
 
-.search-from #search-box{
-width:50rem;
-border-bottom: .1rem solid #fff;
-padding:1rem 0;
-color:#fff;
-font-size:3rem;
-background:none;
-text-transform:none;
+.search-from #search-box {
+  width: 50rem;
+  border-bottom: 0.1rem solid #fff;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 3rem;
+  background: none;
+  text-transform: none;
 }
 
-
-
-.search-from #search-box::placeholder{
-color:#eee;
+.search-from #search-box::placeholder {
+  color: #eee;
 }
-.search-from #search-box::-webkit-search-cancel-button{
--webkit-appearance:none;
+.search-from #search-box::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }
-.search-from label{
-color:white;
-cursor:pointer;
-font-size:3rem;
+.search-from label {
+  color: white;
+  cursor: pointer;
+  font-size: 3rem;
 }
-.search-from label:hover{
-color:var(--green)
+.search-from label:hover {
+  color: var(--green);
 }
 
-.search-from #close{
-	position:absolute;
-	color:white;
-	cursor:pointer;
-	top:2rem;right:3rem;
-	font-size:5rem;
+.search-from #close {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  top: 2rem;
+  right: 3rem;
+  font-size: 5rem;
 }
 
-.filtro{
-display:none;
+.filtro {
+  display: none;
 }
-
-
 
 /*secion de recetas*/
-.recetas{
-margin:9rem;
-display:grid;
-grid-template-columns: repeat(auto-fit, [col-start] minmax(25rem, 1fr) [col-end])
-;
-row-gap:3ch;
-justify-items:start;
-justify-content:center;
+.recetas {
+  margin: 9rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    [col-start] minmax(25rem, 1fr) [col-end]
+  );
+  row-gap: 3ch;
+  justify-items: start;
+  justify-content: center;
 }
-.receta{
-border:2px solid black;
-height:30rem;width:22rem;
-position:relative;
-background-color:var(--green);
-font-size:3rem;
-padding:2rem 2rem 2rem 2rem;
-margin:1rem;
+.receta {
+  border: 2px solid black;
+  height: 30rem;
+  width: 22rem;
+  position: relative;
+  background-color: var(--green);
+  font-size: 3rem;
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 1rem;
 }
-.receta:hover{
-margin-top:3rem;
-margin-top:3rem;
+.receta:hover {
+  margin-top: 3rem;
+  margin-top: 3rem;
 }
-.receta .receta_imagenes{
-height:50%;width:100%;}
+.receta .receta_imagenes {
+  height: 50%;
+  width: 100%;
+}
+.receta a {
+  color: black;
+}
 
-
-
+input{text-transform:none;}
